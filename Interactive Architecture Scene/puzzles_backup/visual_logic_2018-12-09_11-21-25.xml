@@ -1,0 +1,4 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab"></tab>
+  <tab name="Main" type="MainTab"></tab>
+</xml>

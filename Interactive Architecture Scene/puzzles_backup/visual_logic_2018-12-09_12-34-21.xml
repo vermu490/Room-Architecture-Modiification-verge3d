@@ -1,0 +1,1127 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab"></tab>
+  <tab name="Main" type="MainTab">
+    <variables>
+      <variable type="" id="rL@U`%lF(QZH)]N1b=vw">CouchMaterials</variable>
+      <variable type="" id=")Jp`T#8sOzk#p*d/[O-]">CouchMaterialChange</variable>
+      <variable type="" id="Pw:-^FUxX$mWtH0Lq)EL">Couch2MaterialChange</variable>
+      <variable type="" id="(@tgdh51}b8?mpePG1R{">Couch2Materials</variable>
+      <variable type="" id="Z?,wm#,u^QvqMFw*oi-U">CabinetMaterialChange</variable>
+      <variable type="" id="DIO5kK:~[tXnqQ(Gl[}s">CabinetMaterials</variable>
+    </variables>
+    <block type="variables_set" id="aqD4GpzjRTML$=KDaf3N" x="-2490" y="-270">
+      <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+      <value name="VALUE">
+        <block type="math_number" id="Q4m{]K`wZp1;4*7ST);,">
+          <field name="NUM">500</field>
+        </block>
+      </value>
+    </block>
+    <block type="externalCall" id="j,RADfA+T0?b`?D=f;xQ" x="-2490" y="-210">
+      <field name="NAME">CouchNext</field>
+      <statement name="STACK">
+        <block type="variables_set" id="!eE]F[Gtb(8}qx;fm7}O">
+          <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="H/:Twg_GPfU}Ph04^^pY">
+              <field name="OP">ADD</field>
+              <value name="A">
+                <shadow type="math_number" id="l9{-%2CjC_bJNE|{a7Zs">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="variables_get" id="*g{su$DC{jNX07F}!tvA">
+                  <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="o^)!}p?c0{pQ,HPnE$ak">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_number" id="bAlg4^L;wPa}EutG.X+I">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="OIs:W_uo97D6.CLj+l5@">
+              <value name="VALUE2">
+                <block type="lists_getIndex" id="g=0hSbZAjkCsjZV#v5YJ">
+                  <mutation statement="false" at="true"></mutation>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="+$~E;/|xY3xqA2_+gjxA">
+                      <field name="VAR" id="rL@U`%lF(QZH)]N1b=vw" variabletype="">CouchMaterials</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="math_modulo" id="hplNN(sc*?uk)~FfjT_/">
+                      <value name="DIVIDEND">
+                        <shadow type="math_number" id="}P@/nQj^U0T[37hnEh%N">
+                          <field name="NUM">8</field>
+                        </shadow>
+                        <block type="variables_get" id="-Q_nKnh;^NmI-Y}4x7rP">
+                          <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+                        </block>
+                      </value>
+                      <value name="DIVISOR">
+                        <shadow type="math_number" id="n/L%qfbG}a$=OmkcpCy,">
+                          <field name="NUM">3</field>
+                        </shadow>
+                        <block type="lists_length" id="|y[0ceUb:em46q,H+c6x">
+                          <value name="VALUE">
+                            <block type="variables_get" id="TOGcVZfWb;Tg4~O6RYqY">
+                              <field name="VAR" id="rL@U`%lF(QZH)]N1b=vw" variabletype="">CouchMaterials</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="!fU)k%v`nrP2#W}ly2Hn">
+                  <field name="FIELDNAME">living.sofa.large</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="b9YS|{WWAV#78ZNQF{j1" x="1790" y="-330">
+      <value name="VALUE">
+        <block type="objectList" id="rrz,X6UX${XqIT%:G%uu">
+          <field name="FIELDNAME">kitchen.top</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="(OS#n|TPZwKx/T4ZQM(V">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="~o$A!~XOioHn,cC3$`sr">
+              <field name="FIELDNAME">kitchen.top</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="ig1YQm-.xLI[D$.YRaPv">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="wA)%u91Eu|Uo!{OL{W|b">
+              <field name="FIELDNAME">kitchen.top</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id=";9wDS/8s~]C]BDqUt$BE" x="770" y="-270">
+      <value name="VALUE">
+        <block type="objectList" id="Jun~;l#KH8dcN9LA%c_n">
+          <field name="FIELDNAME">dining.lamp.outter</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="(L-s_=:[4t6XC7Qrhkgf">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="cWHyW{pUW[W;BJK0t-fx">
+              <field name="FIELDNAME">dining.lamp.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="G%P[ga,nrc;dRI:`G|P2">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="BdXC#]PmMvj3-kW0Uz-E">
+              <field name="FIELDNAME">dining.lamp.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="dBE$Fp^=oGk{LU{:nQqm" x="-350" y="-210">
+      <value name="VALUE">
+        <block type="objectList" id="na^83(,4.!RLDf-~.p4T">
+          <field name="FIELDNAME">living.sofa.large</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="oFiYp~.e^9@SW$}F1p;=">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="l}]@/#(@I=|,p}*n[kdF">
+              <field name="FIELDNAME">living.sofa.large</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="uAO;tDO3iP!~ZqG^17QP">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="wszAmeADn_{c=ct9%];?">
+              <field name="FIELDNAME">living.sofa.large</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="variables_set" id="##}x{G,}w~/8G*rG{)i%" x="-990" y="-150">
+      <field name="VAR" id="rL@U`%lF(QZH)]N1b=vw" variabletype="">CouchMaterials</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="Kad2y!#6G#Ngu|in7Im:">
+          <mutation items="5"></mutation>
+          <value name="ADD0">
+            <block type="materialList" id="}f#fS*.:,J*kmYzOffU7">
+              <field name="FIELDNAME">living.couch.black</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="materialList" id="r03LO`8)TWMetu]IF58W">
+              <field name="FIELDNAME">living.couch.blue</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="materialList" id="+ZJ1T5HF2dfAL-;H.@Sl">
+              <field name="FIELDNAME">living.couch.red</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="materialList" id="IUPD8{J2`j.25UdCYR$$">
+              <field name="FIELDNAME">living.couch.white</field>
+            </block>
+          </value>
+          <value name="ADD4">
+            <block type="materialList" id="rJRG=O1GYGsl8R*%z5#0">
+              <field name="FIELDNAME">living.couch.grey</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="externalCall" id="oiNWixA?IH!=}Tv{!UU=" x="-2490" y="-10">
+      <field name="NAME">CouchPrevious</field>
+      <statement name="STACK">
+        <block type="variables_set" id="F$TkKVYEIZ{4s(vKU1iH">
+          <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="{t]JWkQu.+toPjk]s,j~">
+              <field name="OP">MINUS</field>
+              <value name="A">
+                <shadow type="math_number" id="l9{-%2CjC_bJNE|{a7Zs">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="variables_get" id="z$58-#g.$IR087]-$Gz#">
+                  <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="o^)!}p?c0{pQ,HPnE$ak">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_number" id="t/YUH#drtfchLZRNSZt~">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="SlyG]pCiKNCai_K1*CnK">
+              <value name="VALUE2">
+                <block type="lists_getIndex" id="Ri_~g)tF{$6lK-6$tvZq">
+                  <mutation statement="false" at="true"></mutation>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="`OEP@,$7nGdQML5nn9dC">
+                      <field name="VAR" id="rL@U`%lF(QZH)]N1b=vw" variabletype="">CouchMaterials</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="math_modulo" id="0R)c=pNE)Ae_B8d;d#Mn">
+                      <value name="DIVIDEND">
+                        <shadow type="math_number" id="}P@/nQj^U0T[37hnEh%N">
+                          <field name="NUM">8</field>
+                        </shadow>
+                        <block type="variables_get" id="JM[QM}4Jk9|ap,a.)rww">
+                          <field name="VAR" id=")Jp`T#8sOzk#p*d/[O-]" variabletype="">CouchMaterialChange</field>
+                        </block>
+                      </value>
+                      <value name="DIVISOR">
+                        <shadow type="math_number" id="n/L%qfbG}a$=OmkcpCy,">
+                          <field name="NUM">3</field>
+                        </shadow>
+                        <block type="lists_length" id="R_5z5BpNM0!b8G9F}R!D">
+                          <value name="VALUE">
+                            <block type="variables_get" id="RUcE=t9*$s!BP{z{}^=P">
+                              <field name="VAR" id="rL@U`%lF(QZH)]N1b=vw" variabletype="">CouchMaterials</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="!ePqbO9fXw_6UGb3Y*E|">
+                  <field name="FIELDNAME">living.sofa.large</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="OC{#7}Fen/[fC6)bI/nn" x="-350" y="-90">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="9z:Uk^=d*sk~EI~G[K,2">
+          <field name="FIELDNAME">living.sofa.large</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="(zwfeddr#w53+Qpplx;F">
+          <value name="POSITION">
+            <block type="objectList" id="g5(y+Hi{!!TT[QwP_ao)">
+              <field name="FIELDNAME">Empty.Living.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id=".|1,BP,p5H2(iwG7L:j[">
+              <field name="FIELDNAME">Empty.Living.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="ZAF|3u+E;1lU5C/^3c-;">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="callJSFunction" id="P.LC[-j+4(uKJGM+Z*FR">
+              <mutation name="showLiving"></mutation>
+              <field name="NAME">showLiving</field>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="?).Ku*4:mC.Oz}9ScI#2" x="770" y="-130">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="wG%g^c3IL!4KF~lxtu.)">
+          <field name="FIELDNAME">dining.lamp.outter</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id=":g2rJta6SlRA4xdoqyMO">
+          <value name="POSITION">
+            <block type="objectList" id="lKdTYPMB0(56Q([@vHW2">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="}D5hh-R{X@eNkb0C|J.T">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="xUq@^~v69.S#L]V:d(?/">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id=";d8vVs2okD#D#My}2Uq/" x="1790" y="-170">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="~5^wkZw}0u5r/Fp/+C)X">
+          <field name="FIELDNAME">kitchen.top</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="(pF|?=KG*ElPH[+AEtCW">
+          <value name="POSITION">
+            <block type="objectList" id="r5~yLEBO}bOI`/wN:vNl">
+              <field name="FIELDNAME">Empty.Kitchen.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="]3-lUJdWcK!+!+`e[R@C">
+              <field name="FIELDNAME">Empty.Kitchen.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="3S8XxQao3+8Q;bed^I-A">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="[V?yz{.6Q[$sdn;c*b|7" x="750" y="-30">
+      <value name="VALUE">
+        <block type="objectList" id="jjj;Q:QX6Er1?WnFFiqv">
+          <field name="FIELDNAME">dining.chair.frame</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="O:(f,0vqX2#h+L]E::%S">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="n~joIw%gHC$}QeFUo%Ai">
+              <field name="FIELDNAME">dining.chair.frame</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="0XQo`:YQKiO[$VroK-,$">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="2iBam,w}rKJqTya|.G{P">
+              <field name="FIELDNAME">dining.chair.frame</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="t~-2[^yY_Se1V8It?X{o" x="-350" y="50">
+      <value name="VALUE">
+        <block type="objectList" id="im3i:#(wFb,))Y8TBATc">
+          <field name="FIELDNAME">living.sofa.small</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="#%P^XOPYIL|`/k`[mqOP">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="n*}{Ir/66p;_6:}1lE)$">
+              <field name="FIELDNAME">living.sofa.small</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="v0xl1D|;=V|V#6h)1i{V">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="Dc*)Hcd86_Q@p(Pe|QLZ">
+              <field name="FIELDNAME">living.sofa.small</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="variables_set" id="/+@DwGb#WPGeQ92E^f~T" x="-2470" y="170">
+      <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+      <value name="VALUE">
+        <block type="math_number" id="v4;(iC#y4`z`oBz:,0Yf">
+          <field name="NUM">500</field>
+        </block>
+      </value>
+    </block>
+    <block type="whenHovered" id="t5T7:;=F+00pMACM=Wlu" x="1781" y="-45">
+      <value name="VALUE">
+        <block type="objectList" id="rgt$+!1}bcPO5+H6{A=U">
+          <field name="FIELDNAME">kitchen.countertop</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="f1#TQ.-za|{*M6wM$`Hf">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="6o[,I6=9mm:Y?5vX?U|A">
+              <field name="FIELDNAME">kitchen.countertop</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="w*0sPN^|UKS;)X*t[(F?">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="7jgdHezz0t8P~k8qgV$G">
+              <field name="FIELDNAME">kitchen.countertop</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="externalCall" id="kFD2B$S-P4!eGqmgrZ=0" x="-2490" y="230">
+      <field name="NAME">Couch2Next</field>
+      <statement name="STACK">
+        <block type="variables_set" id="Q@k7D{:oHo?+Bz:9:#yO">
+          <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="H=5,+U@=4u;w?RZsd2.W">
+              <field name="OP">ADD</field>
+              <value name="A">
+                <shadow type="math_number" id="l9{-%2CjC_bJNE|{a7Zs">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="variables_get" id="F`]VGm|Dr$Hc^TRWYe|y">
+                  <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="o^)!}p?c0{pQ,HPnE$ak">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_number" id=":kMt}DQP2RS{`WWL6K@?">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="wu`oaAGIS]^Fh%prkx0?">
+              <value name="VALUE2">
+                <block type="lists_getIndex" id="MN$^z*=shbqo2qb~Hg5J">
+                  <mutation statement="false" at="true"></mutation>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="fC+TW5)a:$q!HpN5]Q@t">
+                      <field name="VAR" id="(@tgdh51}b8?mpePG1R{" variabletype="">Couch2Materials</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="math_modulo" id="ad-Os%(SkoS$+~OOcO+!">
+                      <value name="DIVIDEND">
+                        <shadow type="math_number" id="}P@/nQj^U0T[37hnEh%N">
+                          <field name="NUM">8</field>
+                        </shadow>
+                        <block type="variables_get" id="d-z/zlgSW}Etq-)L_Oh=">
+                          <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+                        </block>
+                      </value>
+                      <value name="DIVISOR">
+                        <shadow type="math_number" id="n/L%qfbG}a$=OmkcpCy,">
+                          <field name="NUM">3</field>
+                        </shadow>
+                        <block type="lists_length" id="px=eBVTX`^FBlK/~^]u/">
+                          <value name="VALUE">
+                            <block type="variables_get" id="KN@)k}C!]8Q/0tJp-hc%">
+                              <field name="VAR" id="(@tgdh51}b8?mpePG1R{" variabletype="">Couch2Materials</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id=".b)/Y(u:-Ui/CU_bv]=O">
+                  <field name="FIELDNAME">living.sofa.small</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="n=|0N4-N[A%4mXl)FgJU" x="750" y="110">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="E*}u/?Cl3lPyeww}GP|t">
+          <field name="FIELDNAME">dining.chair.frame</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="mF`*nro|c5r!}V0G]_n)">
+          <value name="POSITION">
+            <block type="objectList" id="i=.A:M^HxP)V#a@r9Z}3">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="jfj%VZ!:YDWh6R$mh8Ck">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="RH::TNTfp!8Oxe+l4#%@">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="%rm8[D3)#4n=3`Xw0)eK" x="1790" y="90">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="QV73EZqD]jt{0Ezjfwm]">
+          <field name="FIELDNAME">kitchen.countertop</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="J*7:pt?wv7Dmf=Wa(j+m">
+          <value name="POSITION">
+            <block type="objectList" id=":-}#R.0#iZ]MDa4YU{ob">
+              <field name="FIELDNAME">Empty.Kitchen.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="]??LGoE*T1HISW)*{gE3">
+              <field name="FIELDNAME">Empty.Kitchen.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="K0)Ugf4`(sXAhg=gpbxZ">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="F?f1.9p(6{#sl-k:%5-v" x="-350" y="210">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="oq2Mxfua77W~3NJw7mv;">
+          <field name="FIELDNAME">living.sofa.small</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="VEIQ[=vY6n_,nOlPpB9_">
+          <value name="POSITION">
+            <block type="objectList" id="5(cOX6-hn/kLwnqkMHZ?">
+              <field name="FIELDNAME">Empty.Living.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="sbyc=iS8Z6:e|ENHmo[+">
+              <field name="FIELDNAME">Empty.Living.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="c!KS;[g/x0PJ;GlMTo|^">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="externalCall" id="sZXItscz]jqd}L+(1|Zy" x="-2510" y="390">
+      <field name="NAME">Couch2Previous</field>
+      <statement name="STACK">
+        <block type="variables_set" id="6e(:)EQKLK6y3|db!-hG">
+          <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="*26eFL2Uzu!bVZ3|f_eA">
+              <field name="OP">MINUS</field>
+              <value name="A">
+                <shadow type="math_number" id="l9{-%2CjC_bJNE|{a7Zs">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="variables_get" id="$B`^4P|d?}^~;k)gQ$c`">
+                  <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="o^)!}p?c0{pQ,HPnE$ak">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_number" id=":f6%VAUqDT!:zz6(rl!N">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="WS=.Vcaacov]jrqLfnf4">
+              <value name="VALUE2">
+                <block type="lists_getIndex" id="xo;Wl___21w:-ZSjl1SF">
+                  <mutation statement="false" at="true"></mutation>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="fYkAeivOm[^OV#~%6[uM">
+                      <field name="VAR" id="(@tgdh51}b8?mpePG1R{" variabletype="">Couch2Materials</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="math_modulo" id="r)%RwX:@DL]A{VQPELLk">
+                      <value name="DIVIDEND">
+                        <shadow type="math_number" id="}P@/nQj^U0T[37hnEh%N">
+                          <field name="NUM">8</field>
+                        </shadow>
+                        <block type="variables_get" id="cXfEPZq=g7y1jl2y=oPy">
+                          <field name="VAR" id="Pw:-^FUxX$mWtH0Lq)EL" variabletype="">Couch2MaterialChange</field>
+                        </block>
+                      </value>
+                      <value name="DIVISOR">
+                        <shadow type="math_number" id="n/L%qfbG}a$=OmkcpCy,">
+                          <field name="NUM">3</field>
+                        </shadow>
+                        <block type="lists_length" id="G;L1Xo?kl=~fzL-no;(i">
+                          <value name="VALUE">
+                            <block type="variables_get" id="A,7|~_Rgp43w=F~+l..3">
+                              <field name="VAR" id="(@tgdh51}b8?mpePG1R{" variabletype="">Couch2Materials</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="gHffLlK--KTWqKnz?3*#">
+                  <field name="FIELDNAME">living.sofa.small</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id=",GM6/Lqeufv=.Tbg!nrb" x="750" y="230">
+      <value name="VALUE">
+        <block type="objectList" id="#{:2M:CL8ZjQ^q#K.zKa">
+          <field name="FIELDNAME">dining.chair.seat</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="DxVEW9!9Xx%%mCH2a|]!">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="j=#=-[Fa?2,CQbwW3xI^">
+              <field name="FIELDNAME">dining.chair.seat</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="S=+P~[RlDXH=60X]M7P$">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="8YCo{D!o-75roko9Ex$a">
+              <field name="FIELDNAME">dining.chair.seat</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="variables_set" id="NcxCiG:cGx[U4MU:40}k" x="-1090" y="330">
+      <field name="VAR" id="(@tgdh51}b8?mpePG1R{" variabletype="">Couch2Materials</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="hKWo-I=aD#l%dCt=LsE(">
+          <mutation items="5"></mutation>
+          <value name="ADD0">
+            <block type="materialList" id="$=!@BhQV9Q~m]VF.Wvs(">
+              <field name="FIELDNAME">living.couch.black</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="materialList" id="?qmf7wnl3]UG5IufKg}D">
+              <field name="FIELDNAME">living.couch.blue</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="materialList" id="4dpavyXvj28B%CfA6:;l">
+              <field name="FIELDNAME">living.couch.red</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="materialList" id="$`eKS-jsoD%b@/JOf}_b">
+              <field name="FIELDNAME">living.couch.white</field>
+            </block>
+          </value>
+          <value name="ADD4">
+            <block type="materialList" id="1!O+r$EE3s]L957[fAx,">
+              <field name="FIELDNAME">living.couch.grey</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="whenHovered" id="+f;nDEAYgv/obU:tMi#D" x="1810" y="210">
+      <value name="VALUE">
+        <block type="objectList" id="P`ZUXk=JV^gQ8]FO]Cf6">
+          <field name="FIELDNAME">kitchen.bottom</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="k6{:@MU#)w6:Lb.k)W)c">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="YiUA$a8bXnvWUo7:j~j,">
+              <field name="FIELDNAME">kitchen.bottom</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="Ya5-Q/2o$3b!waFi!j1O">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="j3YU,5$FC0s)[-I(yfn.">
+              <field name="FIELDNAME">kitchen.bottom</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="n_i`,#[yl-D0w3]nTya^" x="-350" y="330">
+      <value name="VALUE">
+        <block type="objectList" id="rAU7b%fU:VBuM:,#uSL=">
+          <field name="FIELDNAME">living.carpet</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="wFE$a?8?L!##yVWx^`JK">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="sMb!}Zvy|A|:pCQ,Se;$">
+              <field name="FIELDNAME">living.carpet</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="*~w$u%=OQ|zJWU6*C6MM">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="tFYnyWR5@5n)ekd^G1Jl">
+              <field name="FIELDNAME">living.carpet</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id=")4kCtx?kBxzXS0!#[z#4" x="730" y="370">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="[hy:FU/.1A,}iY,q8M+`">
+          <field name="FIELDNAME">dining.chair.seat</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="M4Xd9.33TjMk4A*C5JHJ">
+          <value name="POSITION">
+            <block type="objectList" id="NrS~2%esW+9ZG?#KjgLp">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="cb`zT6=*7M,u(480Ei`.">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="H:CMz8AZwE`ZaN:,x(vF">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="tC*0;:smr.gK-{klhV0u" x="1790" y="350">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id=";?57qI7[sgg/2_DWzn91">
+          <field name="FIELDNAME">kitchen.bottom</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="+AH+[cKYxsT64:Et7Wfu">
+          <value name="POSITION">
+            <block type="objectList" id="9KE?s4Cl1COIoB9lcDk3">
+              <field name="FIELDNAME">Empty.Kitchen.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id=".3)-3b_+T%X3,2oLU]Tw">
+              <field name="FIELDNAME">Empty.Kitchen.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="mt#Lb#xw-1sUcM:Y^ntP">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="variables_set" id="0:?`q[o-FuBhC{sRVO!L" x="-2510" y="590">
+      <field name="VAR" id="Z?,wm#,u^QvqMFw*oi-U" variabletype="">CabinetMaterialChange</field>
+      <value name="VALUE">
+        <block type="math_number" id="(%Ivr!:~5Ik%E~p]QrGS">
+          <field name="NUM">500</field>
+        </block>
+      </value>
+    </block>
+    <block type="whenClicked" id="IgcAdtRKH^,MbD)G(KhX" x="-350" y="490">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="@!F[]X`-!mT}l2vzB_,U">
+          <field name="FIELDNAME">living.carpet</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="}s2lY+fwaRV}2Lx/CUj?">
+          <value name="POSITION">
+            <block type="objectList" id="`fE*NC,S}6O-(SjD.3/~">
+              <field name="FIELDNAME">Empty.Living.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="mD0/4H(Apd(!3N$kkzlc">
+              <field name="FIELDNAME">Empty.Living.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="}{SL#,w^ir8iJ]+_8EPi">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="externalCall" id="*76%DXa_;.SxrR7O[rrN" x="-2510" y="650">
+      <field name="NAME">CabinetNext</field>
+      <statement name="STACK">
+        <block type="variables_set" id="6~XfxJs5CIC@~i8@*ZPe">
+          <field name="VAR" id="Z?,wm#,u^QvqMFw*oi-U" variabletype="">CabinetMaterialChange</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="D6`-ZIvz~^+9xgTCbFUu">
+              <field name="OP">ADD</field>
+              <value name="A">
+                <shadow type="math_number" id="l9{-%2CjC_bJNE|{a7Zs">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="variables_get" id="%~EP=]GZX8M*V~$Vrrz`">
+                  <field name="VAR" id="Z?,wm#,u^QvqMFw*oi-U" variabletype="">CabinetMaterialChange</field>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="o^)!}p?c0{pQ,HPnE$ak">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_number" id="#;-Xi5t4)m79XHDh)-5S">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="PpNVJmO{/4Rkr_pUWTN^">
+              <value name="VALUE2">
+                <block type="lists_getIndex" id="^EWjbkU,%tUhm2x:lr:*">
+                  <mutation statement="false" at="true"></mutation>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="variables_get" id="%^P*gQ_%3[5p%._#lA}Q">
+                      <field name="VAR" id="DIO5kK:~[tXnqQ(Gl[}s" variabletype="">CabinetMaterials</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="math_modulo" id="|lJ1?r_Djj1,m6_Ziy8t">
+                      <value name="DIVIDEND">
+                        <shadow type="math_number" id="}P@/nQj^U0T[37hnEh%N">
+                          <field name="NUM">8</field>
+                        </shadow>
+                        <block type="variables_get" id="e)w0{;R0p.pF$1yF$.9X">
+                          <field name="VAR" id="Z?,wm#,u^QvqMFw*oi-U" variabletype="">CabinetMaterialChange</field>
+                        </block>
+                      </value>
+                      <value name="DIVISOR">
+                        <shadow type="math_number" id="n/L%qfbG}a$=OmkcpCy,">
+                          <field name="NUM">3</field>
+                        </shadow>
+                        <block type="lists_length" id="sPn.!X)Mpx{|%tFt4#=T">
+                          <value name="VALUE">
+                            <block type="variables_get" id="#2,R=WP7o4,nL~2m5m8G">
+                              <field name="VAR" id="DIO5kK:~[tXnqQ(Gl[}s" variabletype="">CabinetMaterials</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="objectList" id="#UFg8ZNT)piAl6T89IOW">
+                  <field name="FIELDNAME">living.cabinet.inner</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="M$%_p?W.NOx7J6p0u=BR" x="730" y="510">
+      <value name="VALUE">
+        <block type="objectList" id="0PQ3+iy0AKYk2~F9zl{c">
+          <field name="FIELDNAME">dining.table</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="DEpVof:q:2q~m^fRvt1t">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id=",*Yt)2R^iIOey3|crEc2">
+              <field name="FIELDNAME">dining.table</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="]L@(Uu9om/07%.~u|pT}">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="zftZ[U~~!{04W?{|H0==">
+              <field name="FIELDNAME">dining.table</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="pcS]1-qg1Aa-YXj{=mp~" x="-350" y="610">
+      <value name="VALUE">
+        <block type="objectList" id="smOy(~6,#F=h[16hkYDW">
+          <field name="FIELDNAME">living.cabinet.inner</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="K2C@xgKzwK?:qgsbZwz:">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="3k$YP8[RNY[=7K0In2jH">
+              <field name="FIELDNAME">living.cabinet.inner</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="%o{Wy)`U$?O9hjhE.j:3">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="##UW%;//mPZy^d*%B3Q_">
+              <field name="FIELDNAME">living.cabinet.inner</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="[ojCx^@en_rLsSssVHPg" x="730" y="650">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="z4/21iX^0KP(E@zrR`f*">
+          <field name="FIELDNAME">dining.table</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="*s+ERZE8KkTOrO@m=wJ~">
+          <value name="POSITION">
+            <block type="objectList" id="N?_t1y4t1jhTWq0kQp(i">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id=";FQ9cR9u08j/x$U+P4Ir">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="QvIiPNfFJwl(Qo|2%lEf">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="8#%hEaWut};m%KZo[mQ^" x="-350" y="730">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="XMUKsxRdPn+2B*[Q!e%w">
+          <field name="FIELDNAME">living.cabinet.inner</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="|$A8T,mc~hN37R^MdhEM">
+          <value name="POSITION">
+            <block type="objectList" id="!`UcW{2n4aGdcD;N5;hT">
+              <field name="FIELDNAME">Empty.Cabinet.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="!lB|g^dOsXnJ!o*M^wSd">
+              <field name="FIELDNAME">Empty.Cabinet.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="xJR6+:BmouhY!=.O0Z},">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="?5z)81p/{)7laUgLbZtK" x="-350" y="830">
+      <value name="VALUE">
+        <block type="objectList" id="X^:N[z/#fJIblX}POa)y">
+          <field name="FIELDNAME">living.cabinet.outter</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="@(X}oOaBBf`}D(y*30mr">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="IT5.)(%]w!.?ob22Id)G">
+              <field name="FIELDNAME">living.cabinet.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="VQrbjk~7.kOR6gUpMXS$">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="iTP5[{/G,tZVp1S`Q1Iq">
+              <field name="FIELDNAME">living.cabinet.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="w4!_.0k:P:yHl6y3,rG]" x="-370" y="950">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="ff.Jt1VmDanrpH.{YXeR">
+          <field name="FIELDNAME">living.cabinet.outter</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="FDz|zqIKtzjEN9Ig-XRL">
+          <value name="POSITION">
+            <block type="objectList" id="*3wbR7ECLP$pbG$1!^Q2">
+              <field name="FIELDNAME">Empty.Cabinet.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="X:eLXg$9pkH5[!w:(Q}g">
+              <field name="FIELDNAME">Empty.Cabinet.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="/w@qP|,sVqZG%,4Z]Y;U">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+</xml>

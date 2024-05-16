@@ -1,0 +1,32 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab"></tab>
+  <tab name="Main" type="MainTab">
+    <block type="whenHovered" id="dBE$Fp^=oGk{LU{:nQqm" x="-330" y="-390">
+      <value name="VALUE">
+        <block type="objectList" id="na^83(,4.!RLDf-~.p4T">
+          <field name="FIELDNAME">living.sofa.large</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="oFiYp~.e^9@SW$}F1p;=">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="l}]@/#(@I=|,p}*n[kdF">
+              <field name="FIELDNAME">living.sofa.large</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="uAO;tDO3iP!~ZqG^17QP">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="wszAmeADn_{c=ct9%];?">
+              <field name="FIELDNAME">living.sofa.large</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+</xml>

@@ -1,0 +1,13 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab"></tab>
+  <tab name="Main" type="MainTab">
+    <block type="openWebPage" id="z/t8)v%L^@[;33`=p)Z*" x="-270" y="-470">
+      <field name="MODE">NEW</field>
+      <value name="URL">
+        <shadow type="text" id="Z^4me#xDHv6d3v*lGSF+">
+          <field name="TEXT">https://cgbookcase.com</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+</xml>

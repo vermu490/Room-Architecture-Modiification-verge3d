@@ -1,0 +1,491 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab"></tab>
+  <tab name="Main" type="MainTab">
+    <block type="whenHovered" id=";9wDS/8s~]C]BDqUt$BE" x="770" y="-270">
+      <value name="VALUE">
+        <block type="objectList" id="Jun~;l#KH8dcN9LA%c_n">
+          <field name="FIELDNAME">dining.lamp.outter</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="(L-s_=:[4t6XC7Qrhkgf">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="cWHyW{pUW[W;BJK0t-fx">
+              <field name="FIELDNAME">dining.lamp.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="G%P[ga,nrc;dRI:`G|P2">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="BdXC#]PmMvj3-kW0Uz-E">
+              <field name="FIELDNAME">dining.lamp.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="dBE$Fp^=oGk{LU{:nQqm" x="-350" y="-210">
+      <value name="VALUE">
+        <block type="objectList" id="na^83(,4.!RLDf-~.p4T">
+          <field name="FIELDNAME">living.sofa.large</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="oFiYp~.e^9@SW$}F1p;=">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="l}]@/#(@I=|,p}*n[kdF">
+              <field name="FIELDNAME">living.sofa.large</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="uAO;tDO3iP!~ZqG^17QP">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="wszAmeADn_{c=ct9%];?">
+              <field name="FIELDNAME">living.sofa.large</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="OC{#7}Fen/[fC6)bI/nn" x="-350" y="-90">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="9z:Uk^=d*sk~EI~G[K,2">
+          <field name="FIELDNAME">living.sofa.large</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="(zwfeddr#w53+Qpplx;F">
+          <value name="POSITION">
+            <block type="objectList" id="g5(y+Hi{!!TT[QwP_ao)">
+              <field name="FIELDNAME">Empty.Living.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id=".|1,BP,p5H2(iwG7L:j[">
+              <field name="FIELDNAME">Empty.Living.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="ZAF|3u+E;1lU5C/^3c-;">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="?).Ku*4:mC.Oz}9ScI#2" x="770" y="-130">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="wG%g^c3IL!4KF~lxtu.)">
+          <field name="FIELDNAME">dining.lamp.outter</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id=":g2rJta6SlRA4xdoqyMO">
+          <value name="POSITION">
+            <block type="objectList" id="lKdTYPMB0(56Q([@vHW2">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="}D5hh-R{X@eNkb0C|J.T">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="xUq@^~v69.S#L]V:d(?/">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="[V?yz{.6Q[$sdn;c*b|7" x="750" y="-30">
+      <value name="VALUE">
+        <block type="objectList" id="jjj;Q:QX6Er1?WnFFiqv">
+          <field name="FIELDNAME">dining.chair.frame</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="O:(f,0vqX2#h+L]E::%S">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="n~joIw%gHC$}QeFUo%Ai">
+              <field name="FIELDNAME">dining.chair.frame</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="0XQo`:YQKiO[$VroK-,$">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="2iBam,w}rKJqTya|.G{P">
+              <field name="FIELDNAME">dining.chair.frame</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="t~-2[^yY_Se1V8It?X{o" x="-350" y="50">
+      <value name="VALUE">
+        <block type="objectList" id="im3i:#(wFb,))Y8TBATc">
+          <field name="FIELDNAME">living.sofa.small</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="#%P^XOPYIL|`/k`[mqOP">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="n*}{Ir/66p;_6:}1lE)$">
+              <field name="FIELDNAME">living.sofa.small</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="v0xl1D|;=V|V#6h)1i{V">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="Dc*)Hcd86_Q@p(Pe|QLZ">
+              <field name="FIELDNAME">living.sofa.small</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="n=|0N4-N[A%4mXl)FgJU" x="750" y="110">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="E*}u/?Cl3lPyeww}GP|t">
+          <field name="FIELDNAME">dining.chair.frame</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="mF`*nro|c5r!}V0G]_n)">
+          <value name="POSITION">
+            <block type="objectList" id="i=.A:M^HxP)V#a@r9Z}3">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="jfj%VZ!:YDWh6R$mh8Ck">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="RH::TNTfp!8Oxe+l4#%@">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="F?f1.9p(6{#sl-k:%5-v" x="-350" y="210">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="oq2Mxfua77W~3NJw7mv;">
+          <field name="FIELDNAME">living.sofa.small</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="VEIQ[=vY6n_,nOlPpB9_">
+          <value name="POSITION">
+            <block type="objectList" id="5(cOX6-hn/kLwnqkMHZ?">
+              <field name="FIELDNAME">Empty.Living.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="sbyc=iS8Z6:e|ENHmo[+">
+              <field name="FIELDNAME">Empty.Living.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="c!KS;[g/x0PJ;GlMTo|^">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id=",GM6/Lqeufv=.Tbg!nrb" x="750" y="230">
+      <value name="VALUE">
+        <block type="objectList" id="#{:2M:CL8ZjQ^q#K.zKa">
+          <field name="FIELDNAME">dining.chair.seat</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="DxVEW9!9Xx%%mCH2a|]!">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="j=#=-[Fa?2,CQbwW3xI^">
+              <field name="FIELDNAME">dining.chair.seat</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="S=+P~[RlDXH=60X]M7P$">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="8YCo{D!o-75roko9Ex$a">
+              <field name="FIELDNAME">dining.chair.seat</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="n_i`,#[yl-D0w3]nTya^" x="-350" y="330">
+      <value name="VALUE">
+        <block type="objectList" id="rAU7b%fU:VBuM:,#uSL=">
+          <field name="FIELDNAME">living.carpet</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="wFE$a?8?L!##yVWx^`JK">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="sMb!}Zvy|A|:pCQ,Se;$">
+              <field name="FIELDNAME">living.carpet</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="*~w$u%=OQ|zJWU6*C6MM">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="tFYnyWR5@5n)ekd^G1Jl">
+              <field name="FIELDNAME">living.carpet</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id=")4kCtx?kBxzXS0!#[z#4" x="730" y="370">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="[hy:FU/.1A,}iY,q8M+`">
+          <field name="FIELDNAME">dining.chair.seat</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="M4Xd9.33TjMk4A*C5JHJ">
+          <value name="POSITION">
+            <block type="objectList" id="NrS~2%esW+9ZG?#KjgLp">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="cb`zT6=*7M,u(480Ei`.">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="H:CMz8AZwE`ZaN:,x(vF">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="IgcAdtRKH^,MbD)G(KhX" x="-350" y="490">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="@!F[]X`-!mT}l2vzB_,U">
+          <field name="FIELDNAME">living.carpet</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="}s2lY+fwaRV}2Lx/CUj?">
+          <value name="POSITION">
+            <block type="objectList" id="`fE*NC,S}6O-(SjD.3/~">
+              <field name="FIELDNAME">Empty.Living.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="mD0/4H(Apd(!3N$kkzlc">
+              <field name="FIELDNAME">Empty.Living.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="}{SL#,w^ir8iJ]+_8EPi">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="M$%_p?W.NOx7J6p0u=BR" x="730" y="510">
+      <value name="VALUE">
+        <block type="objectList" id="0PQ3+iy0AKYk2~F9zl{c">
+          <field name="FIELDNAME">dining.table</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="DEpVof:q:2q~m^fRvt1t">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id=",*Yt)2R^iIOey3|crEc2">
+              <field name="FIELDNAME">dining.table</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="]L@(Uu9om/07%.~u|pT}">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="zftZ[U~~!{04W?{|H0==">
+              <field name="FIELDNAME">dining.lamp.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="pcS]1-qg1Aa-YXj{=mp~" x="-350" y="610">
+      <value name="VALUE">
+        <block type="objectList" id="smOy(~6,#F=h[16hkYDW">
+          <field name="FIELDNAME">living.cabinet.inner</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="K2C@xgKzwK?:qgsbZwz:">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="3k$YP8[RNY[=7K0In2jH">
+              <field name="FIELDNAME">living.cabinet.inner</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="%o{Wy)`U$?O9hjhE.j:3">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="##UW%;//mPZy^d*%B3Q_">
+              <field name="FIELDNAME">living.cabinet.inner</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="[ojCx^@en_rLsSssVHPg" x="730" y="650">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="z4/21iX^0KP(E@zrR`f*">
+          <field name="FIELDNAME">dining.table</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="*s+ERZE8KkTOrO@m=wJ~">
+          <value name="POSITION">
+            <block type="objectList" id="N?_t1y4t1jhTWq0kQp(i">
+              <field name="FIELDNAME">Empty.Dining.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id=";FQ9cR9u08j/x$U+P4Ir">
+              <field name="FIELDNAME">Empty.Dining.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="QvIiPNfFJwl(Qo|2%lEf">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="8#%hEaWut};m%KZo[mQ^" x="-350" y="730">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="XMUKsxRdPn+2B*[Q!e%w">
+          <field name="FIELDNAME">living.cabinet.inner</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="|$A8T,mc~hN37R^MdhEM">
+          <value name="POSITION">
+            <block type="objectList" id="!`UcW{2n4aGdcD;N5;hT">
+              <field name="FIELDNAME">Empty.Cabinet.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="!lB|g^dOsXnJ!o*M^wSd">
+              <field name="FIELDNAME">Empty.Cabinet.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="xJR6+:BmouhY!=.O0Z},">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="?5z)81p/{)7laUgLbZtK" x="-350" y="830">
+      <value name="VALUE">
+        <block type="objectList" id="X^:N[z/#fJIblX}POa)y">
+          <field name="FIELDNAME">living.cabinet.outter</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="@(X}oOaBBf`}D(y*30mr">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="IT5.)(%]w!.?ob22Id)G">
+              <field name="FIELDNAME">living.cabinet.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="VQrbjk~7.kOR6gUpMXS$">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <block type="objectList" id="iTP5[{/G,tZVp1S`Q1Iq">
+              <field name="FIELDNAME">living.cabinet.outter</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenClicked" id="w4!_.0k:P:yHl6y3,rG]" x="-370" y="950">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="ff.Jt1VmDanrpH.{YXeR">
+          <field name="FIELDNAME">living.cabinet.outter</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="FDz|zqIKtzjEN9Ig-XRL">
+          <value name="POSITION">
+            <block type="objectList" id="*3wbR7ECLP$pbG$1!^Q2">
+              <field name="FIELDNAME">Empty.Cabinet.Position</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="X:eLXg$9pkH5[!w:(Q}g">
+              <field name="FIELDNAME">Empty.Cabinet.Direction</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="/w@qP|,sVqZG%,4Z]Y;U">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+</xml>

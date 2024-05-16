@@ -1,0 +1,23 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab"></tab>
+  <tab name="Main" type="MainTab">
+    <block type="whenClicked" id="gF1Ag0;L5KGVd3rBJauk" x="-370" y="-570">
+      <mutation enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="C7qcr}KXV3m{w9D8B{hF">
+          <field name="FIELDNAME">living.carpet</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="openWebPage" id="z/t8)v%L^@[;33`=p)Z*">
+          <field name="MODE">NEW</field>
+          <value name="URL">
+            <shadow type="text" id="Z^4me#xDHv6d3v*lGSF+">
+              <field name="TEXT">https://cgbookcase.com</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+</xml>

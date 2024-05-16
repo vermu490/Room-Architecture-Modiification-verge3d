@@ -1,0 +1,120 @@
+body {
+    background-color: #FFF;
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div#fullscreen_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen-open.png');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen-close.png');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+
+h2 {
+
+    /* z-index: 2; */
+    font-family: sans-serif;
+    
+    color: black;
+   margin-top: 9px;
+}
+
+.leftTab {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    z-index: 1;
+    padding: 8px;
+    box-shadow: 2px 0 20px #00000069;
+}
+
+h3:hover{
+    cursor:pointer;
+}
+
+.item {
+    height: 75px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border: 2px solid #dadada;
+    margin-top: 12px;
+    grid-template-columns: 1fr 70px 70px;
+    display: grid;
+}
+
+.item div h3 {
+    padding-top: 8px;
+    padding-left: 12px;
+}
+
+
+.arrow {
+opacity: 0.3;
+    height: 50px;
+    margin-top: 12px;
+}
+
+.arrow:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.flipped {
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#livingitems {
+    display: none;
+}
+
+#diningitems {
+    display: none;
+}
+
+#kitchenitems {
+    display: none;
+}
+
+#miscitems {
+    display: none;
+}
+
+.back {
+    cursor: pointer;
+    text-decoration: underline;
+    color: gray;
+
+}

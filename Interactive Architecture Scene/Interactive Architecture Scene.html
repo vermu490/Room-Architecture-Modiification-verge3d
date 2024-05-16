@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--__VERGE3D_PLAYER__ - delete this comment if you want to edit the player's code-->
+<html lang="en">
+<head>
+  <title>Verge3D Web Interactive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Verge3D Web Interactive">
+  <meta name="twitter:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <meta name="twitter:image:src" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Verge3D Web Interactive">
+  <meta property="og:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <meta property="og:image" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5 ">
+  <meta name="theme-color" content="#ffffff ">
+
+  <script src="v3d.js"></script>
+  <script src="Interactive Architecture Scene.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="Interactive Architecture Scene.css">
+</head>
+
+<body>
+	<div class="leftTab">
+
+    <!-- TOP, ALWAYS VISIBLE -->
+
+    <h2>Design your room</h2>
+    <p>Change the materials of the furniture below or click on an object in the 3D viewport.</p>
+
+
+    <!-- CATEGORIES -->
+
+    <h3 class="categories" id="living">Living</h3>
+    <h3 class="categories" id="dining">Dining</h3>
+    <h3 class="categories" id="kitchen">Kitchen</h3>
+    <h3 class="categories" id="misc">Misc</h3>
+
+    <!-- ITEMS: SOFA, TV STAND, CARPET -->
+
+    <div id="livingitems">
+
+      <div class="item" id="sofa">
+        <div><h3>Sofa (large)</h3></div>
+        <div><img class="arrow flipped" id="sofaminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="sofaplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="sofa2">
+        <div><h3>Sofa (small)</h3></div>
+        <div><img class="arrow flipped" id="sofa2minus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="sofa2plus" src="arrowleft.svg"></div>
+      </div>
+
+
+      <div class="item" id="cabinet">
+        <div><h3>TV stand (inner)</h3></div>
+        <div><img class="arrow flipped" id="cabinetminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="cabinetplus" src="arrowleft.svg"></div>
+      </div> 
+
+      <div class="item" id="cabinet2">
+        <div><h3>TV stand (outter)</h3></div>
+        <div><img class="arrow flipped" id="cabinet2minus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="cabinet2plus" src="arrowleft.svg"></div>
+      </div> 
+
+      <div class="item" id="sofa">
+        <div><h3>Carpet</h3></div>
+        <div><img class="arrow flipped" id="carpetminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="carpetplus" src="arrowleft.svg"></div>
+      </div>
+    <p class="back">go back</p>
+    </div>
+
+    <!-- ITEMS: TABLE, LAMP, CHAIRS -->
+
+    <div id="diningitems">
+
+      <div class="item" id="table">
+        <div><h3>Table</h3></div>
+        <div><img class="arrow flipped" id="tableminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="tableplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="chairsseat">
+        <div><h3>Chairs (seat)</h3></div>
+        <div><img class="arrow flipped" id="chairseatminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="chairseatplus" src="arrowleft.svg"></div>
+      </div>
+
+
+      <div class="item" id="chairframe">
+        <div><h3>Chairs (frame)</h3></div>
+        <div><img class="arrow flipped" id="chairframeminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="chairframeplus" src="arrowleft.svg"></div>
+      </div> 
+
+      <div class="item" id="lamp">
+        <div><h3>Lamp</h3></div>
+        <div><img class="arrow flipped" id="lampminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="lampplus" src="arrowleft.svg"></div>
+      </div> 
+      <p class="back">go back</p>
+    </div>
+
+
+    <!-- ITEMS: KITCHEN -->
+
+     <div id="kitchenitems">
+
+      <div class="item" id="kitchentop">
+        <div><h3>Cabinet (top)</h3></div>
+        <div><img class="arrow flipped" id="kitchentopminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="kitchentopplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="countertop">
+        <div><h3>Countertop</h3></div>
+        <div><img class="arrow flipped" id="countertopminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="countertopplus" src="arrowleft.svg"></div>
+      </div>
+
+
+      <div class="item" id="kitchenbottom">
+        <div><h3>Cabinet (bottom)</h3></div>
+        <div><img class="arrow flipped" id="kitchenbottomminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="kitchenbottomplus" src="arrowleft.svg"></div>
+      </div> 
+
+    <p class="back">go back</p>
+    </div>
+
+    <!-- ITEMS: MISC -->
+
+     <div id="miscitems">
+
+      <div class="item" id="kitchentop">
+        <div><h3>Floor</h3></div>
+        <div><img class="arrow flipped" id="floorminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="floorplus" src="arrowleft.svg"></div>
+      </div>
+
+
+    <p class="back">go back</p>
+    </div>
+
+
+  </div>
+  <div id="container"></div>
+  <div id="fullscreen_button" class="fullscreen-open" title="Toggle fullscreen mode"></div>
+</body>
+
+</html>
